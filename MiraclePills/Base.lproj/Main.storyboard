@@ -30,8 +30,8 @@
                                     <constraint firstAttribute="width" constant="110" id="f1H-Yt-uXW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bp-Wm-eIt">
                                 <constraints>
@@ -39,8 +39,8 @@
                                     <constraint firstAttribute="height" constant="21" id="D0J-UP-yyI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.54049814842880528" blue="0.75019534457544834" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dg2-NJ-Tow" userLabel="Divider">
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,25 +48,47 @@
                                     <constraint firstAttribute="height" constant="1" id="MsP-tb-eAB"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4C-ao-57R">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8la-GW-dEb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.54049814839999999" blue="0.75019534460000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-nN-t9s">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UBr-Zv-Rm2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="g4C-ao-57R" firstAttribute="leading" secondItem="Dg2-NJ-Tow" secondAttribute="leading" id="0kn-kW-D4O"/>
                             <constraint firstItem="6bp-Wm-eIt" firstAttribute="top" secondItem="0xv-Qf-adT" secondAttribute="bottom" constant="8" id="59o-Us-5Z0"/>
                             <constraint firstItem="0xv-Qf-adT" firstAttribute="centerX" secondItem="Pzk-Xp-4pO" secondAttribute="centerX" id="DSy-oT-hAJ"/>
                             <constraint firstAttribute="trailing" secondItem="Dg2-NJ-Tow" secondAttribute="trailing" constant="20" id="DUv-bL-d09"/>
                             <constraint firstItem="0xv-Qf-adT" firstAttribute="top" secondItem="Pzk-Xp-4pO" secondAttribute="bottom" constant="25" id="Kkh-4i-fNR"/>
                             <constraint firstItem="Dg2-NJ-Tow" firstAttribute="top" secondItem="6bp-Wm-eIt" secondAttribute="bottom" constant="8" id="OU3-Sp-dDd"/>
                             <constraint firstItem="Pzk-Xp-4pO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="QeJ-8L-cV7"/>
+                            <constraint firstItem="g4C-ao-57R" firstAttribute="trailing" secondItem="Dg2-NJ-Tow" secondAttribute="trailing" id="S8M-n5-LEd"/>
                             <constraint firstItem="6bp-Wm-eIt" firstAttribute="centerX" secondItem="0xv-Qf-adT" secondAttribute="centerX" id="WJH-ri-o7T"/>
+                            <constraint firstItem="9ER-nN-t9s" firstAttribute="top" secondItem="g4C-ao-57R" secondAttribute="bottom" constant="8" id="Yux-he-zOf"/>
+                            <constraint firstItem="9ER-nN-t9s" firstAttribute="leading" secondItem="g4C-ao-57R" secondAttribute="leading" id="bUf-98-nwV"/>
                             <constraint firstItem="Dg2-NJ-Tow" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="eZ4-Ul-mKX"/>
+                            <constraint firstItem="g4C-ao-57R" firstAttribute="top" secondItem="Dg2-NJ-Tow" secondAttribute="bottom" constant="14" id="ja5-r6-J5o"/>
                             <constraint firstItem="Dg2-NJ-Tow" firstAttribute="centerX" secondItem="6bp-Wm-eIt" secondAttribute="centerX" id="qEh-CO-bg2"/>
                             <constraint firstItem="Pzk-Xp-4pO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sLo-we-y4G"/>
+                            <constraint firstItem="9ER-nN-t9s" firstAttribute="trailing" secondItem="g4C-ao-57R" secondAttribute="trailing" id="zrM-QI-ofz"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30.434782608695656" y="35.869565217391305"/>
+            <point key="canvasLocation" x="29.600000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>
