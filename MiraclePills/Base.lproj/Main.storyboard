@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="Pzk-Xp-4pO">
@@ -42,14 +42,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dg2-NJ-Tow" userLabel="Divider">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MsP-tb-eAB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6bp-Wm-eIt" firstAttribute="top" secondItem="0xv-Qf-adT" secondAttribute="bottom" constant="38" id="59o-Us-5Z0"/>
+                            <constraint firstItem="6bp-Wm-eIt" firstAttribute="top" secondItem="0xv-Qf-adT" secondAttribute="bottom" constant="8" id="59o-Us-5Z0"/>
                             <constraint firstItem="0xv-Qf-adT" firstAttribute="centerX" secondItem="Pzk-Xp-4pO" secondAttribute="centerX" id="DSy-oT-hAJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Dg2-NJ-Tow" secondAttribute="trailing" constant="20" id="DUv-bL-d09"/>
                             <constraint firstItem="0xv-Qf-adT" firstAttribute="top" secondItem="Pzk-Xp-4pO" secondAttribute="bottom" constant="25" id="Kkh-4i-fNR"/>
+                            <constraint firstItem="Dg2-NJ-Tow" firstAttribute="top" secondItem="6bp-Wm-eIt" secondAttribute="bottom" constant="8" id="OU3-Sp-dDd"/>
                             <constraint firstItem="Pzk-Xp-4pO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="QeJ-8L-cV7"/>
                             <constraint firstItem="6bp-Wm-eIt" firstAttribute="centerX" secondItem="0xv-Qf-adT" secondAttribute="centerX" id="WJH-ri-o7T"/>
+                            <constraint firstItem="Dg2-NJ-Tow" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="eZ4-Ul-mKX"/>
+                            <constraint firstItem="Dg2-NJ-Tow" firstAttribute="centerX" secondItem="6bp-Wm-eIt" secondAttribute="centerX" id="qEh-CO-bg2"/>
                             <constraint firstItem="Pzk-Xp-4pO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sLo-we-y4G"/>
                         </constraints>
                     </view>
